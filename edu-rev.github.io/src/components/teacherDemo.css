@@ -1,0 +1,32 @@
+/* teacherDemo.css */
+.teacher-demo-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .teacher-demo-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .teacher-demo-content {
+    max-width: 50%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .teacher-demo-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .teacher-demo-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  

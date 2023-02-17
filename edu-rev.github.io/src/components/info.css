@@ -1,0 +1,100 @@
+.background-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0)); */
+}
+  
+.company-info {
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    padding: 2rem; /* Add some padding to make sure the text is readable (chatgpt) */
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat';
+    text-align: center;
+    color: white;
+    z-index: 1; /* Use a higher z-index to keep the text on top of the background image */
+}
+  
+.title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 1080px) {
+    .title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .title {
+        font-size: 2rem;
+        white-space: normal;
+    }
+}
+
+.apply-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.apply-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+  
+.apply-button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+  
+  

@@ -1,0 +1,32 @@
+/* studentDemo.css */
+.student-demo-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .student-demo-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .student-demo-content {
+    max-width: 50%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .student-demo-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .student-demo-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
