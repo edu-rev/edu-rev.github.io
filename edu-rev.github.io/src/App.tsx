@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,11 +19,46 @@ function App() {
     });
   }, []);
 
+  const infoRef = useRef<HTMLDivElement>(null);
+  const studentDemoRef = useRef<HTMLDivElement>(null);
+  const teacherDemoRef = useRef<HTMLDivElement>(null);
+  const shouldScrollToStudentDemo = Math.random() >= 0.5; // Generate random boolean value
+
+  useEffect(() => {
+    const randomNumber = Math.floor(Math.random() * 3);
+    let elementRef;
+
+    switch (randomNumber) {
+      case 0:
+        elementRef = infoRef;
+        break;
+      case 1:
+        elementRef = studentDemoRef;
+        break;
+      case 2:
+        elementRef = teacherDemoRef;
+        break;
+      default:
+        elementRef = infoRef;
+        break;
+    }
+
+    if (elementRef.current) {
+      elementRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+
   return (
     <div>
-      <Info />
-      {/* <StudentDemo />
-      <TeacherDemo /> */}
+      <div ref={infoRef}>
+        <Info />
+      </div>
+      <div ref={studentDemoRef}>
+        <StudentDemo />
+      </div>
+      <div ref={teacherDemoRef}>
+        <TeacherDemo />
+      </div>
     </div>
   );
 }

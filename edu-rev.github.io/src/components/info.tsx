@@ -23,15 +23,15 @@ const Info: React.FC = () => {
          style={{ backgroundImage: `url(${vanGoh})` }}
       >
          <div className="overlay" />
-            <div className="company-info">
-               <h1 className="title">Free and Personalized Education</h1>
-               <a
-               href="https://docs.google.com/forms/d/e/1FAIpQLScjrA9sDVhZ6Dw4bTzccFJwtNIPEdMx1qnBTm08-VDIPdx4TQ/viewform?usp=sf_link"
-               className="apply-button"
-               >
-               Join Us
-               </a>
-            </div>
+         <div className="company-info">
+            <h1 className="title">Free and Personalized Education</h1>
+            <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScjrA9sDVhZ6Dw4bTzccFJwtNIPEdMx1qnBTm08-VDIPdx4TQ/viewform?usp=sf_link"
+            className="apply-button"
+            >
+            Join Us
+            </a>
+         </div>
       </div>
    );
 };
