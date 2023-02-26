@@ -1,6 +1,8 @@
 import React from "react";
 import "./info.css";
 import vanGoh from "../images/sky.png";
+import sd from "../images/sd.png";
+import messy from "../images/messy_children.png"
 
 const Info: React.FC = () => {
    // const handleScroll = () => {
